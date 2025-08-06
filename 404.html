@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 Not Found - automateapp.store</title>
+    <meta name="description" content="Page not found. Let's get you back on track.">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">automateapp.store</div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- 404 Section -->
+    <section class="not-found-section">
+        <div class="container">
+            <div class="not-found-content">
+                <div class="not-found-animation">
+                    <svg width="150" height="150" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12,2A10,10,0,1,0,22,12,10,10,0,0,0,12,2Zm0,18a8,8,0,1,1,8-8A8,8,0,0,1,12,20Z" fill="#21808d"/>
+                        <path d="M12,5a1,1,0,0,0-1,1v5a1,1,0,0,0,2,0V6A1,1,0,0,0,12,5Zm0,10a1,1,0,1,0,1,1A1,1,0,0,0,12,15Z" fill="#21808d"/>
+                        <g class="sleepy-animation">
+                            <path d="M8.5,11.5 C9.5,12.5 10.5,12.5 11.5,11.5" stroke="#21808d" fill="none" stroke-linecap="round" stroke-width="1.5"/>
+                            <path d="M15.5,11.5 C14.5,12.5 13.5,12.5 12.5,11.5" stroke="#21808d" fill="none" stroke-linecap="round" stroke-width="1.5"/>
+                            <g class="zzz">
+                                <path d="M16,8 l1,1 l-1,1" stroke="#21808d" fill="none" stroke-linecap="round" stroke-width="1"/>
+                                <path d="M17,6 l1,1 l-1,1" stroke="#21808d" fill="none" stroke-linecap="round" stroke-width="1"/>
+                                <path d="M18,4 l1,1 l-1,1" stroke="#21808d" fill="none" stroke-linecap="round" stroke-width="1"/>
+                            </g>
+                        </g>
+                    </svg>
+                </div>
+                <h1 class="not-found-title">Oops! This AI agent seems to be on a coffee break.</h1>
+                <p class="not-found-text">The page you are looking for might have been moved, deleted, or is temporarily unavailable.</p>
+                <a href="/index.html" class="btn btn--primary">Return to Homepage</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2025 automateapp.store. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <style>
+        .not-found-section {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            min-height: calc(100vh - 160px); /* Adjust based on header/footer height */
+            padding: 40px 0;
+        }
+        .not-found-content h1 {
+            font-size: 2.5rem;
+            margin: 20px 0;
+            color: var(--color-primary);
+        }
+        .not-found-content p {
+            font-size: 1.2rem;
+            color: var(--color-text-secondary);
+            margin-bottom: 30px;
+        }
+        .not-found-animation .zzz {
+            opacity: 0;
+            animation: zzz-fade 2.5s infinite;
+        }
+        .not-found-animation .zzz path:nth-child(2) { animation-delay: 0.2s; }
+        .not-found-animation .zzz path:nth-child(3) { animation-delay: 0.4s; }
+        @keyframes zzz-fade {
+            0%, 100% { opacity: 0; transform: translateY(0); }
+            50% { opacity: 1; transform: translateY(-10px); }
+        }
+    </style>
+</body>
+</html>
